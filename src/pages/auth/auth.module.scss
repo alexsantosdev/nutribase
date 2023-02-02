@@ -1,0 +1,105 @@
+.contentContainer {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    form {
+        width: 40%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        margin-top: 8rem;
+
+        img {
+            width: 60px;
+        }
+
+        .formContent {
+            margin-top: 2rem;
+
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                align-self: center;
+                margin-bottom: 1rem;
+            }
+            
+            input[type=text], input[type=password] {
+                outline: none;
+                padding: 18px 12px;
+                width: 22rem;
+
+                border: 1px solid var(--gray-300);
+                border-radius: 5px;
+
+                &:focus {
+                    border: 1px solid var(--pink-600);
+                }
+
+                & + input {
+                    margin-top: 12px;
+                }
+            }
+
+            a.forgot {
+                margin-top: 8px;
+                color: var(--blue-500);
+                font-weight: 600;
+
+                transition: 0.2s;
+                width: max-content;
+
+                &:hover {
+                    filter: brightness(1.2);
+                }
+            }
+
+            input[type=submit] {
+                margin-top: 12px;
+                border: none;
+                outline: none;
+
+                border-radius: 5px;
+                padding: 18px 12px;
+                background: var(--pink-600);
+                color: var(--white);
+
+                cursor: pointer;
+
+                &:hover {
+                    filter: brightness(0.8);
+                }
+            }
+
+            span {
+                align-self: center;
+                margin-top: 18px;
+
+                a {
+                    font-weight: 500;
+                    color: var(--blue-500);
+                }
+            }
+        }
+    }
+
+    .footerText {
+        font-size: 14px;
+
+        margin-bottom: 16px;
+        color: var(--gray-400);
+    }
+}
